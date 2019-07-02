@@ -2,6 +2,7 @@
   "name": "electron-webpack-quick-start",
   "version": "0.0.0",
   "license": "MIT",
+  "esm": "auto",
   "scripts": {
     "dev": "electron-webpack dev",
     "compile": "electron-webpack",
@@ -10,6 +11,7 @@
   },
   "dependencies": {
     "source-map-support": "^0.5.12",
+    "esm": "^3.2.25",
     "@atlaskit/navigation-next": "6.3.0"
   },
   "devDependencies": {
