@@ -9,15 +9,22 @@
     "dist": "yarn compile && electron-builder",
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
+  "electronWebpack": {
+    "whiteListedModules": ["@atlaskit/navigation-next"]
+  },
   "dependencies": {
-    "source-map-support": "^0.5.12",
+    "@atlaskit/navigation-next": "6.3.0",
+    "styled-components": "^3.2.6",
     "esm": "^3.2.25",
-    "@atlaskit/navigation-next": "6.3.0"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "source-map-support": "^0.5.12",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "electron": "5.0.4",
     "electron-builder": "^20.44.4",
     "electron-webpack": "^2.7.1",
     "webpack": "~4.35.0"
-  } 
+  }
 }
